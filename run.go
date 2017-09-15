@@ -42,7 +42,7 @@ var (
 	newBenchMem    = flag.Bool("check.bmem", false, "Report memory benchmarks")
 	newListFlag    = flag.Bool("check.list", false, "List the names of all tests that will be run")
 	newWorkFlag    = flag.Bool("check.work", false, "Display and do not remove the test working directory")
-	abort          = flag.Bool("check.abort", false, "Stop testing the suite if a test has failed")
+	abort          = flag.Bool("check.abort", true, "Stop testing the suite if a test has failed")
 )
 
 // TestingT runs all test suites registered with the Suite function,
